@@ -1,0 +1,10 @@
+name: publish-container-image
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  
+  publish-container-images:
+    uses: toolfordev/.github/workflow/publish-container-images.yml@main
