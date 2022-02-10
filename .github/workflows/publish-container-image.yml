@@ -7,4 +7,4 @@ on:
 jobs:
   
   publish-container-images:
-    uses: /tmdcommunity/actions/.github/workflows/publish-container-image.yml@main
+    uses: tmdcommunity/actions/.github/workflows/publish-container-image.yml@main
