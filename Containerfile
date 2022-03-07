@@ -4,6 +4,7 @@ COPY . .
 RUN go mod tidy; \
     go build
 FROM docker.io/library/golang:1.16
+EXPOSE 14000
 WORKDIR /tmd
 COPY --from=builder /tmd/local-api-global-variables ./local-api-global-variables
 RUN chmod +x local-api-global-variables
