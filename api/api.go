@@ -12,5 +12,5 @@ type GlobalVariableApi struct {
 func (api *GlobalVariableApi) Init(manager *dependencies.Manager) {
 	api.router.Init(manager)
 	api.router.AddController(GlobalVariableController{})
-	api.router.ListenAndServe()
+	api.router.ListenAndServe(":14000")
 }
