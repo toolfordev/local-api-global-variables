@@ -2,11 +2,10 @@ package persistence
 
 import (
 	"github.com/toolfordev/local-api-global-variables/models"
-	"gorm.io/gorm"
 )
 
 type GlobalVariableEntity struct {
-	gorm.Model
+	ID    uint   `gorm:"primarykey"`
 	Name  string `gorm:"unique"`
 	Value string
 }
